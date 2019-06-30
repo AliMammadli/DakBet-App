@@ -1,0 +1,22 @@
+page-intro {
+  .intro {
+    position: relative;
+    background: url('../assets/imgs/intro.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .get-start-btn {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4.2rem;
+    background-color: #ffffff;
+    background-image: linear-gradient( 135deg,  rgba(61,237,253,1) 44.2%, rgba(3,136,238,1) 95.6% );
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 30vh;
+    border-radius: 10px;
+  }
+}

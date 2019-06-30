@@ -1,5 +1,7 @@
 {
-  "name": "slt",
-  "integrations": {},
+  "name": "DakBet",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

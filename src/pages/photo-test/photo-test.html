@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Məşq</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-slides #slides pager="true">
+  <ion-slide class="slide" *ngFor="let letter of randomArray; let index = index;">
+    <ion-card class="letter">
+      <h1 class="letter-h1"> {{ letter | uppercase }} </h1>
+    </ion-card>
+
+
+    <ion-item no-padding class="variants-item">
+      <ion-avatar item-start class="variant-card left-avatar avatar" (click)="next(variants[index][0])">
+        <img src="../assets/letters/{{ variants[index][0] }}.png">
+      </ion-avatar>
+
+      <ion-avatar class="variant-card center-avatar avatar" (click)="next(variants[index][1])">
+        <img src="../assets/letters/{{ variants[index][1] }}.png">
+      </ion-avatar>
+
+      <ion-avatar item-end class="variant-card avatar" (click)="next(variants[index][2])">
+        <img src="../assets/letters/{{ variants[index][2] }}.png">
+      </ion-avatar>
+    </ion-item>
+
+
+  </ion-slide>
+
+  <ion-slide *ngIf="inputs[0]" class="results">
+    <h1 class="res-h1">Nəticələr</h1>
+
+    <ion-list>
+      <ion-item>
+        <ion-grid class="res-h3">
+          <ion-row>
+            <ion-col ion-item no-padding col-6 class="input">
+              <h3 padding-left text-center style="color: #8e8e93;">Verilmiş</h3>
+            </ion-col>
+            <ion-col ion-item no-padding col-6 class="input">
+              <h3 padding-left text-center style="color: #30d158;">Düzgün</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngFor="let correct of randomArray; let index = index;">
+            <ion-col ion-item no-padding col-6 class="input">
+              <h3 padding-left text-center
+                [ngStyle]="{'color': inputs[index] == randomArray[index]? '#34c759' : '#ff453a'}">
+                {{ inputs[index] | uppercase}}</h3>
+            </ion-col>
+            <ion-col ion-item no-padding col-6 class="input">
+              <h3 padding-left text-center style="color: #34c759;">{{ randomArray[index] | uppercase}}</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ion-slide>
+
+</ion-slides>

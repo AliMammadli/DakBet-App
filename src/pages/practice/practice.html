@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Məşq</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <h1>Əlifba</h1>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item tappable (click)="goToPage('CounterTimePage')">
+      <ion-icon item-start color="primary" name="stopwatch-outline" md="ios-stopwatch-outline"></ion-icon> Zamana qarşı
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item tappable (click)="goToPage('PhotoTestPage')">
+      <ion-icon item-start color="primary" name="images-outline" md="ios-images-outline"></ion-icon> Şəkillər ilə
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item tappable (click)="goToPage('LetterTestPage')">
+      <ion-icon item-start color="primary" name="book-outline" md="ios-book-outline"></ion-icon> Hərflər ilə
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <h1>İfadələr</h1>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item tappable (click)="willBeSoon()">
+      <ion-icon item-start color="primary" name="stopwatch-outline" md="ios-stopwatch-outline"></ion-icon> Zamana qarşı
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item tappable (click)="willBeSoon()">
+      <ion-icon item-start color="primary" name="images-outline" md="ios-images-outline"></ion-icon> Şəkillər ilə
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item tappable (click)="willBeSoon()">
+      <ion-icon item-start color="primary" name="book-outline" md="ios-book-outline"></ion-icon> Hərflər ilə
+      <ion-icon item-end color="lightdark" name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

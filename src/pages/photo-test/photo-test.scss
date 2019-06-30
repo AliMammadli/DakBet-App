@@ -1,0 +1,73 @@
+page-photo-test {
+  .card {
+    transform: translate(0%, -50%);
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px #c3c3c3; //#da3a5e9e
+  }
+
+  .variant-card {
+    img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+
+  .center-avatar {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .variants-item {
+    margin-top: -81px !important;
+  }
+
+  .avatar {
+    border-radius: 10px;
+    // border: solid 1px #ffd60a;
+  }
+
+  .left-avatar {
+    margin: 8px 16px 8px 8px !important;
+  }
+
+  .letter-h1 {
+    font-size: 184px;
+  }
+
+  .next-button {
+    border-radius: 4px;
+  }
+
+  .input-item {
+    margin-top: -97px;
+  }
+
+  .item-inner {
+    border: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .results>.slide-zoom {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 50%;
+    margin-bottom: 30%;
+  }
+
+  .res-h1 {
+    color: map-get($map: $colors, $key: primary);
+    margin-top: 12%;
+  }
+
+  .res-h3 {
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+}

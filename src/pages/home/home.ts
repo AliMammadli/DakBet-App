@@ -1,14 +1,32 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
+
+
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+    selector: 'page-home',
+    templateUrl: 'home.html',
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+    constructor(
+        public nav: NavController,
+        public navParams: NavParams,
+        private alert: AlertController) {
+    }
 
-  }
+    goToPage(page) {
+        this.nav.push(page);
+    }
+
+    willBeSoon() {
+        let alert = this.alert.create({
+            title: 'Tezliklə!',
+            message: "Bu bölmə tezliklə hazır olacaq :)",
+            buttons: ["Bağla"]
+        });
+        alert.present();
+    }
 
 }

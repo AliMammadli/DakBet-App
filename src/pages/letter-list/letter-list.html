@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Hərflər</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card class="letter" *ngFor="let letter of letters">
+      <ion-item class="actions">
+          <ion-avatar item-start >
+            <h1 class="avatar">{{ letter | uppercase}}</h1>
+          </ion-avatar>
+        </ion-item>
+    <img src="../assets/letters/{{ letter }}.png">
+  </ion-card>
+
+</ion-content>

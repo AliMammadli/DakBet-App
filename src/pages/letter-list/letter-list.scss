@@ -1,0 +1,26 @@
+page-letter-list {
+    .card {
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 2px #c3c3c3; //#da3a5e9e
+        background: linear-gradient(to top,rgba(0,0,0,0.3) 0%,transparent 100%) !important;
+    }
+
+    .avatar {
+        font-size: 70px;
+        color: #ff375f;
+    }
+
+    .actions {
+        position: absolute;
+        background-color: transparent;
+        color: #fff;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 2px;
+        border-radius: 10px;
+
+        .save {
+            margin: 8px 2px 8px 8px;
+        }
+    }
+}

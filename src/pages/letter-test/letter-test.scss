@@ -1,0 +1,53 @@
+page-letter-test {
+  .card {
+    transform: translate(0%, -50%);
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px #c3c3c3; //#da3a5e9e
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, transparent 100%) !important;
+  }
+
+  .input-letter {
+    border: solid 1px #8e8e93;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    max-width: 67px;
+  }
+
+  .next-button {
+    border-radius: 4px;
+  }
+
+  .input-item {
+    margin-top: -97px;
+  }
+
+  .item-inner {
+    border: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .results >.slide-zoom {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 50%;
+    margin-bottom: 30%;
+  }
+
+  .res-h1 {
+    color: map-get($map: $colors, $key: primary);
+    margin-top: 12%;
+  }
+
+  .res-h3 {
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+}
